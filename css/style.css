@@ -36,7 +36,7 @@ canvas{
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #afa5a5;
+  background-color: #837474;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -90,8 +90,8 @@ canvas{
   text-align: center;
   justify-content: center;
   gap: 19px;
-  pointer-events: none;
 }
+
 
 .social__icon {
   height: 50px;
@@ -100,9 +100,71 @@ canvas{
 
 .social__vk, .social__tg, .social__git {
   pointer-events: auto;
+  
 }
 
+
+/* test */
+
+.social__dev a:hover .anim::before {
+  opacity: 1;
+}
+
+.social__dev a:hover img.social__icon {
+  transform: scale(1.2);
+}
+
+/* test */
+
+
+
+.title__main {
+  font-size: 75px;
+  pointer-events: none;
+  font-family: Blackcraft;
+  font-weight: 900;
+  position: relative;
+  color: transparent; /* Прозрачный цвет текста */
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #FFB6C1, #ffa500, #00FF00, #bc46b8, #131111, #7ace43, #FFD700); /* Градиентный фон с различными цветами */
+  background-size: 600% 600%;
+  animation: glowingBackground 12s linear infinite; /* Более быстрая анимация */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.title__main:before {
+  content: attr(data-text); /* Используем текст из атрибута data-text */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent; /* Прозрачный цвет текста */
+  mix-blend-mode: screen;
+  animation: glowingText 1s linear infinite; /* Ускорение анимации текста */
+}
+
+@keyframes glowingText {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes glowingBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 690px) {
+  .pouring { font-size: 20px; } 
+}
+
+
 /* ---- main__dev ---- */
+
+
 
 @media (min-width: 1280px) {
     
