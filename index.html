@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <title>x3wnl0x</title>
+    
+
 </head>
 <body>
   
+
 <!-- particles.js container -->
 
 <div id="particles-js">
@@ -45,6 +48,10 @@
         </div>
         </div>
 
+        <div class="portfolio__tx">
+            <a id="typing-text" href="https://github.com/keydrave">
+            </a>
+        </div>
     
     
       </div>
@@ -53,6 +60,23 @@
    
 <!-- particles.js container -->
 
+<script>
+    const text = "Portfolio";
+    const typingSpeed = 250; // Скорость печатания (в миллисекундах)
+
+    let i = 0;
+    const typingText = document.getElementById("typing-text");
+
+    function typeWriter() {
+      if (i < text.length) {
+        typingText.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, typingSpeed);
+      }
+    }
+
+    typeWriter();
+  </script>
 
 <!-- scripts -->
 <script src="js/particles.min.js"></script>

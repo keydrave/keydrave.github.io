@@ -5,6 +5,13 @@
   font-weight: normal;
    }
 
+   @font-face {
+  font-family: "Undertale-Battle-Font";  
+  src: url("../fonts/Undertale-Battle-Font.woff2") format("woff2"); 
+  font-style: normal; 
+  font-weight: bold;
+   }
+
 
 h1 {
   font-family: "Blackcraft";
@@ -90,6 +97,7 @@ canvas{
   text-align: center;
   justify-content: center;
   gap: 19px;
+  margin-bottom: 25px;
 }
 
 
@@ -161,43 +169,28 @@ canvas{
   .pouring { font-size: 20px; } 
 }
 
+#typing-text {
+  font-family: "Undertale-Battle-Font";
+  font-size: 24px;
+  color: #fff;
+}
+
+.portfolio__tx {
+  pointer-events: auto;
+  width: 50%; /* Ширина дива - 50% от родительского элемента */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  text-align: center; /* Центрирование текста внутри дива */
+}
+
+.portfolio__tx a {
+  display: block; /* Превращаем ссылку в блочный элемент */
+  width: 100%; /* Ширина ссылки - 100% от ширины дива */
+  text-decoration: none; /* Убираем подчеркивание ссылки */ /* Добавьте отступы по желанию */
+  background-color: rgb(14, 24, 27); 
+  border-radius: 10px;
+}
 
 /* ---- main__dev ---- */
 
 
 
-@media (min-width: 1280px) {
-    
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 480px) {
-
-}
-
-@media (min-width: 320px) {
-   
-    .center__main {
-        justify-content: center;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-   
-    .x3wnl0x__img {
-        position: absolute;
-        left: 50%;
-        top: -30%;
-        transform: translate(-50%, -50%);  
-        width: 155px;
-        height: auto;
-        justify-content: center;
-    }
-
-
-}
